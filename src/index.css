@@ -1,3 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family:'Allerta Stencil';
+  src: local('Allerta Stencil'), url(./fonts/AllertaStencil-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'Saira Condensed Light';
+  src: local('Saira Condensed Light'), url(./fonts/SairaCondensed-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'Saira Condensed Medium';
+  src: local('Saira Condensed Medium'), url(./fonts/SairaCondensed-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'Cabin Sketch';
+  src: local('Cabin Sketch'), url(./fonts/CabinSketch-Regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -5,6 +5,7 @@ import { useMediaQuery } from "react-responsive";
 import BannerImg from "../../assets/illustrations/solcial_exp_banner.png";
 import { Navbar } from "../../components/navbar";
 import { Button } from "../../components/button";
+import { ColoredLine } from "../../components/line";
 import { FeatureNFT, FeatureGame, FeatureReward } from "../../components/feature";
 
 
@@ -60,7 +61,7 @@ const GameText = styled.h2`
   color: #000000;
   text-align: center;
   margin-top: 2em;
-  margin-block-end: 0.2em;
+  margin-block-end: 0.6em;
 
   @media screen and (max-width: 480px) {
     font-size: 40px;
@@ -77,6 +78,21 @@ const GameTextName = styled.h2`
 
   @media screen and (max-width: 480px) {
     font-size: 36px;
+}
+`;
+
+
+const GameTextEnd = styled.h2`
+  font-family: Cabin Sketch;
+  font-size: 28px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin-block-start: 0.1em;
+  margin-block-end: 2em;
+
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
 }
 `;
 
@@ -103,7 +119,7 @@ const ClauseText = styled.h2`
   margin-block-end: 0.2em;
 
   @media screen and (max-width: 480px) {
-    font-size: 36px;
+    font-size: 28px;
 }
 `;
 
@@ -117,7 +133,7 @@ const ClauseSubText = styled.p`
   margin-block-start: 0.1em;
 
   @media screen and (max-width: 480px) {
-    font-size: 24px;
+    font-size: 18px;
 }
 `;
 
@@ -158,6 +174,7 @@ const GamesContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  margin-bottom: 4em;
   max-width: 1200px;
 
   @media screen and (max-width: 480px) {
@@ -225,17 +242,32 @@ export function TopSection(props) {
       </FeaturesContainer>
 
       <GamesContainer>
-        <GameText> Experiment 1 </GameText>
+        <GameText> Upcoming Experiments: </GameText>
+        <GameTextName> Solana Squid Games </GameTextName>
+        <GameSubText> Pass the challenge and advance to the next round. Fail to do so and you will be <span style={styles.pink}>eliminated</span>. Mint funds are funneled directly back into the project to reward the winners</GameSubText>
+        <ClauseText> Clause 1: </ClauseText>
+        <ClauseSubText> A player must purchase an NFT from The Solcial Experiment - Squid Games line in order to compete</ClauseSubText>
+        <ClauseText> Clause 2: </ClauseText>
+        <ClauseSubText> A player must compete in a weekly challenge until they are eliminated or the games have stopped. The game will change each week. Some require luck, others require skill. A players NFT is mutable. If they have been eliminated, the appearance and metadata will be reflected to show this</ClauseSubText>
+        <ClauseText> Clause 3: </ClauseText>
+        <ClauseSubText> If the majority of active players agree to stop playing, the games may end. Each week the prize pool will grow.  Players who have not been eliminated have the option to split a % of the pot with the other remaining players through a vote</ClauseSubText>
+        <GameTextEnd> How far will you go? </GameTextEnd>
+        <ColoredLine/>
+      </GamesContainer>
+
+
+
+      <GamesContainer>
         <GameTextName> Hold The Key </GameTextName>
         <GameSubText> The objective of the game is simple. Mint one of our Key NFTs and <span style={styles.pink}>Hold</span>. Do so for 4 weeks and you are guarunteed to receive back the full mint price, thus resulting in a <span style={styles.pink}>free</span> NFT. When the time period has finished, the NFT will transform</GameSubText>
         <ClauseText> Clause 1: </ClauseText>
-        <ClauseSubText> A player must purchase an NFT from The Solcial Experiment - Experiment 1 line. Exact mint price decided via Fair Launch Protocol</ClauseSubText>
+        <ClauseSubText> A player must purchase an NFT from The Solcial Experiment - Hold The Key line in order to compete</ClauseSubText>
         <ClauseText> Clause 2: </ClauseText>
         <ClauseSubText> A player receives SOL back weekly as long as their NFT is delisted. A snapshot will be taken randomly at some point during the week and payouts follow the below scheme: </ClauseSubText>
         <ClauseSubText> Hold for all 4 weeks and receive the full price of the mint back. 50% returned week one, 30% week two, 15% week three, 5% week four. If your NFT is listed at the time of the snapshot, you will not be elligible for that weeks return </ClauseSubText>
         <ClauseText> Clause 3: </ClauseText>
         <ClauseSubText> At the end of the time period, a player's NFT is subject to transform into something unique. Players who competed will be logged in our Player Log</ClauseSubText>
-        <GameTextName> We only profit if you can't hold. Game on </GameTextName>
+        <GameTextEnd> We only profit if you can't hold. Game on </GameTextEnd>
       </GamesContainer>
     </TopContainer>
   </Element>

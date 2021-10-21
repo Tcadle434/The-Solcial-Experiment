@@ -248,9 +248,9 @@ export function TopSection(props) {
         <ClauseText> Clause 1: </ClauseText>
         <ClauseSubText> A player must purchase an NFT from The Solcial Experiment - Squid Games line in order to compete</ClauseSubText>
         <ClauseText> Clause 2: </ClauseText>
-        <ClauseSubText> A player must compete in a weekly challenge until they are eliminated or the games have stopped. The game will change each week. Some require luck, others require skill. A players NFT is mutable. If they have been eliminated, the appearance and metadata will be reflected to show this</ClauseSubText>
+        <ClauseSubText> A player must compete in challenges until they are eliminated or the games have stopped. Each game will be unique. Some require luck, others require skill. A players NFT is mutable. If they have been eliminated, the appearance and metadata will be reflected to show this</ClauseSubText>
         <ClauseText> Clause 3: </ClauseText>
-        <ClauseSubText> If the majority of active players agree to stop playing, the games may end. Each week the prize pool will grow.  Players who have not been eliminated have the option to split a % of the pot with the other remaining players through a vote</ClauseSubText>
+        <ClauseSubText> If the majority of active players agree to stop playing, the games may end. Each round the prize pool will grow.  Players who have not been eliminated have the option to split a % of the pot with the other remaining players through a vote</ClauseSubText>
         <GameTextEnd> How far will you go? </GameTextEnd>
         <ColoredLine/>
       </GamesContainer>

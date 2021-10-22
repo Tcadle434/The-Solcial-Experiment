@@ -216,8 +216,11 @@ export function TopSection(props) {
         <BannerImgStyled src={BannerImg}/>
         <TextContainer>
           <SloganText>The Solcial Experiment</SloganText>
+
           <SubText> A series of <span style={styles.pink}>mental challenges</span> and <span style={styles.pink}>tests of willpower</span> on Solana. How far will you make it?</SubText>
+          <a href = "https://discord.gg/ZgrhTPhHMV">
           <Button> Join The Discord </Button>
+          </a>
         </TextContainer>
       </InitialContainer>
 
